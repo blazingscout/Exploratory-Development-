@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <!--canvas id= "canvas" width= "720" height= "1200" style= "border:solid black 1px;">
+    <./canvas-->
+    <head> 
+    	<title>Exploratory</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+    <body>
+    <br>
+    <!--button onclick = "startup()">Initialize</button-->
+    <br>
+<div>Exploratory! Alpha 1.0 "Icecream" build</div>
+    <br>
+    <b>Health:</b> <span id="health"></span><br>
+    <b>STR:</b> <span id = "str"></span>   
+    <b>END:</b> <span id = "end"></span>
+    <b>CHA:</b> <span id = "cha"></span>
+    <b>INT:</b> <span id = "int"></span>
+    <b>WIS:</b> <span id = "wis"></span>
+    <b>DEX:</b> <span id = "dex"></span><br>
+    
+    <input value="Inventory" type="button" id="invButt"onclick="InventoryCheck()"></input>
+    <input value="Equipped Items" type ="button" id = "equipButt" onclick="EquipmentCheck()"></input>
+    <input value="Surroundings Check" type="button"onclick="var xyxx = ayyy"></input>
+    <br>
+    <!--button id = "startbutton" onclick = "startadv()">Start</button-->
+    <form>
+       <d value= "Hostile:" id="HostileDongle"></d><span id="enemy"></span> <br> <span id = "enemydesc"></span>
+        <br>
+        <br>
+        Log:  <div id="title" style="border: ipx solid #ccc;">
+        </div> <div id="log" style="border: ipx solid #ccc;"></div>
+        <div id="action" style="border: ipx solid #ccc;"></div>
+
+        <br>
+    	<div data-role="page">
+    	<!--div type="reset" value="Reset"></div-->
+        <input value="A"type="button" id="buttA" onclick="changeForA()"></input> <span id="a"></span><br>
+        <input value="B"type="button" id="buttB" onclick="changeForB()"></input> <span id="b"></span><br>
+        <input value="C"type="button" id="buttC" onclick="changeForC()"></input> <span id="c"></span><br>
+        <input value="D"type="button" id="buttD" onclick="changeForD()"></input> <span id="d"></span>
+
+        <input value="Continue"type="button" id="datbutton" onclick="continueBASE()"></input> <span id="a"></span>
+        <input value="Continue"type="button" id="mainbutton" onclick="continuer()"></input> <span id="b"></span>
+        <!--button id="datbutton">Continue</button-->
+        <!--button id="mainbutton">Continue</button-->
+    
+    </form>
+    <br>
+    <br>
+    <span id = "inventory"></span>
+    <input value="close"type="button"id="closer"onclick="closeFunction()"></input>
+    <br>
+    <br>
+    <c value="Equipped" id="EquipDongle" Items:</c><br>
+    <br>
+    <b value="Head" id = "HeadValue": ></b>
+    <bb value="Shoulders:" id="ShoulderValue"></bb> 
+    <bbb value="Upper Body" id = "UpperValue": ></bbb>
+    <bbbb value="Lower Body" id = "LowerValue": ></bbbb>
+    <bbbbb value="Hands" id = "HandValue": ></bbbbb>
+    <bbbbbb value="Legs" id = "LegValue": ></bbbbbb>
+    <bbbbbbb value="Knapsack" id = "KnapValue": ></bbbbbbb>
+    <bbbbbbbb value="Miscellaneous" id = "MiscValue": ></bbbbbbbb>
+    
+
+
+   		<script src="dialog.js" type ="text/javascript", text/plain></script>
+		<div id = "textDiv"></div>
+   	</body>
+   	</div>
+</html>

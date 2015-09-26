@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<EnemyNodes>
+	<SmallCitters>	
+		<Goblin>
+			<Desc> The creature is small and scrawny, but is wielding a sort of barbed weapon and is waving it in a theatening matter. </Desc>
+			<Name> Goblin Warrior </Name>
+		</Goblin>
+		<Kobold>
+
+
+		</Kobold>
+		<Myr>
+			<Name>Myr</Name>
+			<Desc> This metal being is hip hight, and wields razor sharp claws! Myr's are very skiddish, so plan carefully! 
+		</Myr>
+	</SmallCitters>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</EnemyNodes>

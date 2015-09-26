@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<gameData>
+	<note>I like pie
+		<footnote>I see you with that net</footnote>
+	</note>
+
+
+
+	<startarea>
+		<StartOpDesc> Welcome to Exploratory! You are an adventurer, ready to take on this world full of unexplainable phemnomenon, Your standing in a vast feild, what will you do? </StartOpDesc>
+		<StartOptions> 
+			<startA>  Search for a town </startA>
+			<startA>  Travel to the east </startA>
+			<startA>  Travel to the north </startA>
+			<startA>  Wander the plains </startA>
+		</StartOptions>
+		<StartFeedback> 
+			<startAA> You have no idea whre a town could be, so you do nothing! </startAA>
+			<startAA> You start off traveling east, and quickly exit the plains, and arrive in a swamp. You vigorously fight through the vegitation (+1 END) and come upon a pool with a strange object jetting out of the middle of it.  </startAA>
+			<startAA> You leave for the north and eventually come upon a mountain pass. you continue through the pass until you hear rustling in a near by bush. </startAA>
+			<startAA> You meander around the plains for some time, looking at all the wild grasses and pretty flowers, suddenly you fall into a pit of pungee sticks, rendering you immoblie. In you last minutes of life you regret ever setting foot outside of your home.</startAA>
+		</StartFeedback>
+	</startarea>
+
+
+
+	<swampAreaOne>
+		<swampOneOpDesc> Your standing on the edge of a swamp pool, the strange object is still jetting out of the center of it.</swampOneOpDesc>
+		<swampOneOpDescS> You are standing in the middle of a swamp pool. </swampOneOpDescS>
+		<swampOneOptions>
+			<swampOneA>  Move through the pool and grab the object </swampOneA>
+			<swampOneA>  Wander the swamp some more.  </swampOneA>
+			<swampOneA>  Investigate the object </swampOneA>
+			<swampOneA> Dive into the pool in search of more loot!</swampOneA>
+			<swampOneA> Stay in the pool and enjoy the scenery of the swamp.</swampOneA>
+			<swampOneA>  Use the sword to freeze the swamp! </swampOneA>
+		</swampOneOptions>
+			
+		<swampOneAnswers>
+
+			<swampOneAA> You waddle through the swamp pool and discover the object jetting out of the pool is a actually a sword! You accquire the sword and put it in your inventory! You also feel more durable by making it to the object, but less intelligent due to not taking precautions  </swampOneAA>
+			<swampOneAA> </swampOneAA>
+			<swampOneAA> </swampOneAA>
+			<swampOneAA> </swampOneAA>
+
+		</swampOneAnswers>
+	</swampAreaOne>
+
+
+
+	<mountainAreaOne>
+		<mountainOneOptions>
+			<mountainOneA> a: Look for the goblin! </mountainOneA>
+			<mountainOneB> b: Investigate the rustling bushes ahead </mountainOneB>
+			<mountainOneC> c: Stay still","d: Do the 'hookey pokey' (for some reason you know how to do that... Teferi probably made you do it one point in time... what a chump).  </mountainOneC>
+			<mountainOneD> d: Prepare for a fight! </mountainOneD>
+		</mountainOneOptions>
+
+
+
+		<mountainOneAnswers>
+			<mountianAA> You take a quick look around the surrounding area, but in the process you are ambushed by a goblin duo! </mountianAA>
+			<mountianAB> Before you can move close enough to the bush, a goblin duo ambushes you! </mountianAB>
+			<mountianAC> While doing your rather idoitic dance a goblin duo confusingly charges you. Your enemy is at a disadvantage due to thier confusion! </mountianAC>
+			<mountianAD> You get into a battle stance! The bushes burst, revealing goblin duo! You have an advantage due to your readyness. </mountianAD>
+		</mountainOneAnswers>
+
+	</mountainAreaOne>
+
+
+
+
+</gameData>
