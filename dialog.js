@@ -65,6 +65,8 @@ var LeDis = document.getElementById("HandValue");
 var HaDis = document.getElementById("LegValue");
 var MDis = document.getElementById("KnapValue");
 var KDis = document.getElementById("MiscValue");
+//Health and conditions (IE food drink, injury system!)
+var health = 100;
 
 //skills
 var Skills = new Array(5, 5, 5, 5, 5, 5);
@@ -81,16 +83,20 @@ var firstChainRun = false;
 var secondChainRun = false;
 var thirdChainRun = false;
 //other
-var dci = document.getElementById("datbutton");
-var nami = document.getElementById("mainbutton");
-var kami = document.getElementById("EquipDongle");
+//var dci = document.getElementById("datbutton");
+//var nami = document.getElementById("mainbutton");
+//var kami = document.getElementById("equipbtn");
+$("#datmutton").hide();
+$("#mainbutton").hide();
+$("#eauipbtn").hide();
 $("#closer").hide();
-var Norgami = document.getElementById("HostileDongle");
+$("#hostileDongle").hide();
+//var Norgami = document.getElementById("HostileDongle");
 
-kami.style.display = "none";
-dci.style.display = "none";
-nami.style.display = "none";
-Norgami.style.display = "none";
+//kami.style.display = "none";
+//dci.style.display = "none";
+//nami.style.display = "none";
+//Norgami.style.display = "none";
 
 var btnA = document.getElementById("btnA");
 var btnB = document.getElementById("btnB");
@@ -166,14 +172,21 @@ function startadv() {
 }
 
 //skill display
-document.getElementById("health").innerHTML = health;
+//document.getElementById("health").innerHTML = health;
 
-$("#str").innerHTML = strength;
-document.getElementById("end").innerHTML = endurance;
-document.getElementById("cha").innerHTML = charisma;
-document.getElementById("int").innerHTML = intellegence;
-document.getElementById("wis").innerHTML = wisdom;
-document.getElementById("dex").innerHTML = dexterity;
+$("#str").text(strength);
+$("#end").text(endurance);
+$("#cha").text(charisma);
+$("#int").text(intellegence);
+$("#wis").text(wisdom);
+$("#dex").text(dexterity);
+//document.getElementById("end").innerHTML = endurance;
+//document.getElementById("cha").innerHTML = charisma;
+//document.getElementById("int").innerHTML = intellegence;
+//document.getElementById("wis").innerHTML = wisdom;
+//document.getElementById("dex").innerHTML = dexterity;
+
+
 //chain runs
 function firstChain(evt) {
 
