@@ -83,7 +83,8 @@ var firstChainRun = false;
 var secondChainRun = false;
 var thirdChainRun = false;
 //other
-//var dci = document.getElementById("datbutton");
+
+//var dci = document.getElementById("continueBtn");
 //var nami = document.getElementById("mainbutton");
 //var kami = document.getElementById("equipbtn");
 $("#datmutton").hide();
@@ -94,7 +95,7 @@ $("#hostileDongle").hide();
 //var Norgami = document.getElementById("HostileDongle");
 
 //kami.style.display = "none";
-//dci.style.display = "none";
+//dci.style.display = "";
 //nami.style.display = "none";
 //Norgami.style.display = "none";
 
@@ -102,7 +103,7 @@ var btnA = document.getElementById("btnA");
 var btnB = document.getElementById("btnB");
 var btnC = document.getElementById("btnC");
 var btnD = document.getElementById("btnD");
-var kami = document.getElementById("invbtn");
+//var kami = document.getElementById("invbtn");
 
 var goblinStatus = true;
 var returner = false;
@@ -172,8 +173,16 @@ function startadv() {
 }
 
 //skill display
+//kami.style.display = "none";
+//dci.style.display = "none";
+//nami.style.display = "none";
+//Norgami.style.display = "none";
+
+
+
 //document.getElementById("health").innerHTML = health;
 
+//var str = $("#str").html();
 $("#str").text(strength);
 $("#end").text(endurance);
 $("#cha").text(charisma);
