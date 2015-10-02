@@ -1,2 +1,381 @@
 <?xml version="1.0"?>
-<gamedata></gamedata>
+<gamedata>
+	<Tools>
+		<GrapplingHook>
+			
+		</GrapplingHook>
+		<Torch>
+			
+		</Torch>	
+		<Rope>
+			
+		</Rope>
+		<UtilityShovel>
+			
+		</UtilityShovel>
+		<TinderBox>
+			
+		</TinderBox>
+		<BedRoll>
+			
+		</BedRoll>
+		<TentKit>
+			
+		</TentKit>
+		<Canteen>
+			
+		</Canteen>
+		<Waterskin>
+			
+		</Waterskin>
+	</Tools>
+	<Bags>
+		<Knapsack>
+			
+		</Knapsack>
+		<SlingBag>
+			
+		</SlingBag>
+		<BasicBag>
+			
+		</BasicBag>
+		<CourierPouch>
+			
+		</CourierPouch>
+		<Bandolier>
+			
+		</Bandolier>
+		<RunedKnapsack>
+			
+		</RunedKnapsack>
+		<BurdenBag>
+			
+		</BurdenBag>
+		
+	</Bags>
+	<Weapons>
+		
+		
+		<Swords>
+			<Longswords>
+				
+			</Longswords>
+			
+			
+			<Shortswords>
+				
+			</Shortswords>
+			
+			
+			<GreatSwords>
+				
+			</GreatSwords>
+			
+			
+			<Katanas>
+				
+			</Katanas>
+			
+			
+			<UnreasonableSwords>
+				
+			</UnreasonableSwords>
+			
+			
+			<ElementalSwords>
+				
+			</ElementalSwords>
+		</Swords>
+		
+		
+		<Axes>
+			<OneHand>
+				
+			</OneHand>
+			<TwoHanded>
+				
+			</TwoHanded>
+	
+		</Axes>
+		
+		
+		<Blunt>
+			<Mace>
+				
+			</Mace>
+			<Club>
+				
+			</Club>
+			<MorningStar>
+				
+			</MorningStar>
+			<Flail>
+				
+			</Flail>
+			<WarHammer>
+				
+			</WarHammer>
+			<Maul>
+				
+			</Maul>
+		</Blunt>
+		
+		
+		<Whips>
+			
+			
+		</Whips>
+		
+		
+		<Spears>
+			<Javelin>
+				
+			</Javelin>
+			<Lance>
+				
+			</Lance>
+			<Partisan>
+				
+			</Partisan>
+			<WarScythe>
+				
+			</WarScythe>
+			<Fork>
+				
+			</Fork>
+			<Ranseur>
+				
+			</Ranseur>
+			<Glaive>
+				
+			</Glaive>
+			<Halbred>
+				
+			</Halbred>
+			<Pike>
+				
+			</Pike>
+			<ShortSpear>
+				
+			</ShortSpear>
+		</Spears>
+		
+		
+		<Improvised>
+			
+		</Improvised>
+		
+		
+		<Knives>
+			
+		</Knives>
+		
+		
+		<Ranged>
+			<LongBow>
+				
+			</LongBow>
+			<RecurveBow>
+				
+			</RecurveBow>
+			<Crossbow>
+				
+			</Crossbow>
+			<Ballista>
+				
+			</Ballista>
+			<Sling>
+				
+			</Sling>
+			<Chakram>
+				
+			</Chakram>
+			<Arbalest>
+				
+			</Arbalest>
+			<Sh>
+		
+		</Ranged>
+		
+		
+		<Staves>
+			
+		</Staves>
+		
+		
+	</Weapons>
+	
+	
+	<Wearable>
+		
+		
+		<Head>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>
+		</Head>
+		
+		
+		<UpperTorso>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>
+		</UpperTorso>
+		
+		
+		<LowerTorso>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>			
+		</LowerTorso>
+		
+		
+		<Arms>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>			
+		</Arms>
+		
+		
+		<Gloves>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>			
+		</Gloves>
+		<Feet>
+			<Plate>
+				
+			</Plate>
+			<Mail>
+				
+			</Mail>
+			<Leather>
+				
+			</Leather>
+			<Improvised>
+				
+			</Improvised>
+			<Ordinary>
+				
+			</Ordinary>
+		</Feet>
+		<Misc>
+			<Robes>
+				
+			</Robes>
+			<Cloaks>
+				
+			</Cloaks>
+			<Rings>
+				
+			</Rings>
+			<Sigils>
+				
+			</Sigils>
+			<Necklaces>
+				
+			</Necklaces>
+
+			<Garments>
+				<Head>
+					
+				</Head>
+				<Upper>
+					
+				</Upper>
+				<Lower>
+					
+				</Lower>
+				<Shoes>
+					
+				</Shoes>
+				<Socks>
+				
+				</Socks>
+			
+			</Garments>
+		</Misc>
+		
+	
+	</Wearable>
+	<Loot>
+		
+	</Loot>
+	<Currency>
+		
+	</Currency>
+	<Junk>
+		
+	</Junk>
+	<Materials>
+		
+	</Materials>
+	<QuestItems>
+		
+	</QuestItems>
+	
+	
+	
+	
+	
+</gamedata>

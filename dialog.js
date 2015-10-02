@@ -244,9 +244,7 @@ COMBAT.onload = function(e) {
 				COMBAT.loadXML(RoomNodes);
 			}
 			CombatEngineStart();
-			// currentDesc = xhr.responseText;
-			// theta = xhr.responseXML;
-			//console.log(currentDesc);
+
 		} else {
 			console.error(COMBAT.statusText);
 		}
@@ -260,7 +258,7 @@ COMBAT.onerror = function(e) {
 COMBAT.send();
 
 function CombatEngineStart() {
-	if ( hostileEncounter = true) {
+	if ( hostileEncounter = true) 
 
 		console.log("goodness me combat has arose!");
 	}
@@ -268,3 +266,13 @@ function CombatEngineStart() {
 }
 
 //COMBAT MODULE END!\\
+
+
+
+
+
+/* 
+  ♫▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬♫ 
+ＳＨＵＴ　ＵＰ　ＡＮＤ　ＥＮＪＯＹ　ＴＨＥ　ＮＩＧＨＴＣＯＲＥ ！ 
+  ♫▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬♫
+*/
