@@ -5,7 +5,10 @@
 			<Desc> The creature is small and scrawny, but is wielding a sort of barbed weapon and is waving it in a theatening matter. </Desc>
 			<Name> Goblin Warrior </Name>
 		</Goblin>
+			
 		<Kobold>
+			<Desc> This creature is an impish, dragon like spirit that must not be underestimated </Desc>
+			<Name> Kobold Phantom</Name>
 
 
 		</Kobold>
