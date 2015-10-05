@@ -1,14 +1,5 @@
 console.log("Hello! I am your console, and I won't let you load XML :P");
-var a = false;
-var b = false;
-var c = false;
-var d = false;
-var ca = false;
-var cb = false;
-var cc = false;
-var cd = false;
-var y;
-var n;
+
 var health = 100;
 
 //COMBAT intitial variables
@@ -70,7 +61,29 @@ $("#LegValue").hide();
 $("#KnapValue").hide();
 $("#MiscValue").hide();
 
+function ShowEquip(){
+	$("#HeadValue").show();
+	$("#ShoulderValue").show();
+	$("#UpperValue").show();
+	$("#LowerValue").show();
+	$("#HandValue").show();
+	$("#LegValue").show();
+	$("#KnapValue").show();
+	$("#MiscValue").show();
+	$("#closer").show();
+}
 
+function UniCloser(){
+	$("#HeadValue").hide();
+	$("#ShoulderValue").hide();
+	$("#UpperValue").hide();
+	$("#LowerValue").hide();
+	$("#HandValue").hide();
+	$("#LegValue").hide();
+	$("#KnapValue").hide();
+	$("#MiscValue").hide();
+	$("#closer").hide();
+}
 //END INVENTORY SYSTEM\\
 
 
@@ -163,22 +176,19 @@ function startadv() {
 	var start = /*prompt("Are you ready for an adventure through the planar universe?! (y/n)")*/"y";
 	if (start == "y") {
 		log("Have fun!");
-		firstChain();
 	} else {
 		startadv();
 	}
 }
 
-//BEGINS THE CHOICE ENGINE\\
+		//BEGINS THE CHOICE ENGINE\\
 var wheelLands = Math.floor((Math.random() * 100) + 1);
 console.log(wheelLands);
-var outcomes = {
-	
-	
-	
+		//ROOMS
+//swamp
+function swampA() {
+	var completionist = 0;
 }
-
-
 
 
 
@@ -258,7 +268,7 @@ COMBAT.onerror = function(e) {
 COMBAT.send();
 
 function CombatEngineStart() {
-	if ( hostileEncounter = true) 
+	if ( hostileEncounter = true){ 
 
 		console.log("goodness me combat has arose!");
 	}
