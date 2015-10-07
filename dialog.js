@@ -9,11 +9,13 @@ hostileEncounter = true;
 
 //Inventory BEGIN\\
 var Equipped = new Array();
-var Inventory = new Map();
-var InvObj = {},
-    invFunc = function() {
-};
-InvKeyString = "Inventory";
+
+var inventory = new Object();
+inventory['slot1'] = "empty";
+
+console.log(inventory['slot1']);
+
+
 
 
 //Inv items parcer
@@ -182,12 +184,14 @@ function startadv() {
 }
 
 		//BEGINS THE CHOICE ENGINE\\
-var wheelLands = Math.floor((Math.random() * 100) + 1);
+var wheelLands = Math.floor((Math.random() * 1000) + 1);
 console.log(wheelLands);
 		//ROOMS
 //swamp
 function swampA() {
-	var completionist = 0;
+	if(wheelLands >= 1 && wheelLands <= 1000)
+		var completionist = 0;
+		document.getElementById("inventoryPrinter").innerHTML=invXML.getElementsByTagName
 }
 
 
@@ -278,6 +282,7 @@ function CombatEngineStart() {
 //COMBAT MODULE END!\\
 
 
+//document.getElementById("myImage").src = "landscape.jpg";
 
 
 
