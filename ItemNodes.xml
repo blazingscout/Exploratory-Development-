@@ -162,7 +162,30 @@
 		
 		
 		<Improvised>
-			
+			<BlacksmithHammer>
+				
+			</BlacksmithHammer>
+			<SharpStick>
+				
+			</SharpStick>
+			<ImprovisedBow>
+				
+			</ImprovisedBow>
+			<StoneAxe>
+				
+			</StoneAxe>
+			<Rock>
+				
+			</Rock>
+			<Anchor>
+				
+			</Anchor>
+			<Pitchfork>
+				
+			</Pitchfork>
+			<Flower>
+				
+			</Flower>
 		</Improvised>
 		
 		
@@ -212,7 +235,16 @@
 		
 		
 		<Staves>
+			<TorchStaff>
+				
+			</TorchStaff>
 			
+	
+	
+	
+	
+	
+	
 		</Staves>
 		
 		
