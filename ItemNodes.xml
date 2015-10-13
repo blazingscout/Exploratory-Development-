@@ -60,42 +60,106 @@
 			<Longswords>
 				
 			</Longswords>
-			
-			
 			<Shortswords>
 				
 			</Shortswords>
-			
-			
+
 			<GreatSwords>
-				
 			</GreatSwords>
 			
 			
 			<Katanas>
 				
 			</Katanas>
-			
-			
+			<NoDachi>
+				
+			</NoDachi>
+			<Wakazashi>
+				
+			</Wakazashi>
+			<HorseChopper>
+				
+			</HorseChopper>
+			<FlatEnd>
+				
+			</FlatEnd>
+			<ArmingSword>
+				
+			</ArmingSword>
+			<Zweihander>
+				
+			</Zweihander>
+			<Claymore>
+				
+			</Claymore>
+			<Ulfberht>
+				
+			</Ulfberht>
+			<Falchion>
+				
+			</Falchion>
+			<Sabre>
+				
+			</Sabre>
 			<UnreasonableSwords>
-				
+				<ThePlank>
+					
+				</ThePlank>
+				<BusterBlade>
+					
+				</BusterBlade>
+				<GreaterSword>
+				<TheMountain>
+					
+				</TheMountain>
+				<ReiverBlade>
+					
+				</ReiverBlade>
+				<BigKnife>
+					
+				</BigKnife>
 			</UnreasonableSwords>
-			
-			
-			<ElementalSwords>
-				
-			</ElementalSwords>
 		</Swords>
 		
 		
 		<Axes>
 			<OneHand>
-				
+				<HandAxe>
+					
+				</HandAxe>
+				<Hatchet>
+					
+				</Hatchet>
+				<WarAxe>
+					
+				</WarAxe>
+				<HandPanabas>
+					
+				</HandPanabas>
+				<MarauderAxe>
+					
+				</MarauderAxe>
 			</OneHand>
 			<TwoHanded>
-				
+				<SplittingAxe>
+					
+				</SplittingAxe>
+				<BeardedAxe>
+					
+				</BeardedAxe>
+				<GreatAxe>
+					
+				</GreatAxe>
+				<DoubleAxe>
+					
+				</DoubleAxe>
+				<HalfMoonAxe>
+					
+				</HalfMoonAxe>
+				<Panabas>
+					
+				</Panabas>
 			</TwoHanded>
-	
 		</Axes>
 		
 		
@@ -122,8 +186,27 @@
 		
 		
 		<Whips>
-			
-			
+			<LeatherWhip>
+				
+			</LeatherWhip>
+			<ChainWhip>
+				
+			</ChainWhip>
+			<DoubleChainWhip>
+				
+			</DoubleChainWhip>			
+			<WhipSword>
+				
+			</WhipSword>
+			<BladeWhip>
+				
+			</BladeWhip>
+			<BladedWhip>
+				
+			</BladedWhip>
+			<BullWhip>
+				
+			</BullWhip>
 		</Whips>
 		
 		
@@ -238,13 +321,21 @@
 			<TorchStaff>
 				
 			</TorchStaff>
-			
-	
-	
-	
-	
-	
-	
+			<QuaterStaff>
+				
+			</QuaterStaff>
+			<WoodStaff>
+				
+			</WoodStaff>
+			<SteelBattleStaff>
+				
+			</SteelBattleStaff>
+			<Bo>
+				
+			</Bo>
+			<RingedBo>
+				
+			</RingedBo>
 		</Staves>
 		
 		
@@ -407,13 +498,72 @@
 		
 	</Loot>
 	<Currency>
-		
+		<GoldCoin>
+			
+		</GoldCoin>
+		<SilverCoin>
+			
+		</SilverCoin>
+		<CopperCoin>
+			
+		</CopperCoin>
 	</Currency>
 	<Junk>
-		
+		<RottenFood>
+			
+		</RottenFood>
+		<UntreatedWater>
+			
+		</UntreatedWater>
+		<RottingClothes>
+			
+		</RottingClothes>
+		<RustedMetal>
+			
+		</RustedMetal>
 	</Junk>
 	<Materials>
-		
+		<Wood>
+			
+		</Wood>
+		<ingots>
+			<Gold>
+				
+			</Gold>
+			<Silver>
+				
+			</Silver>
+			<Platinum>
+				
+			</Platinum>
+			<Iron>
+				
+			</Iron>
+			<Steel>
+				
+			</Steel>
+		</ingots>
+		<ArcaneShard>
+			
+		</ArcaneShard>
+		<RuneWritingMaterials>
+			
+		</RuneWritingMaterials>
+		<Parchment>
+			
+		</Parchment>
+		<Ink>
+			
+		</Ink>
+		<Quill>
+			
+		</Quill>
+		<Tongs>
+			
+		</Tongs>
+		<ArcaneChanneler>
+			
+		</ArcaneChanneler>
 	</Materials>
 	<QuestItems>
 		
