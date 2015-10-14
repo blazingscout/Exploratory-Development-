@@ -16,7 +16,7 @@ inventory['slot1'] = "empty";
 console.log(inventory['slot1']);
 
 
-
+var invResXML
 
 //Inv items parcer
 var invXML = new XMLHttpRequest();
@@ -26,7 +26,7 @@ invXML.onload = function(e) {
 		if (invXML.status === 200) {
 			if (window.DOMParser) {
 				parser = new DOMParser();
-				currentCombat = parser.parseFromString(invXML.responseText, "text/xml");
+				invResXML = parser.parseFromString(invXML.responseText, "text/xml");
 			} else {
 				invXML = new ActiveXObject("Microsoft.XMLDOM");
 				invXML.async = false;
@@ -187,13 +187,16 @@ function startadv() {
 var wheelLands = Math.floor((Math.random() * 1000) + 1);
 console.log(wheelLands);
 		//ROOMS
-//swamp
-function swampA() {
-	if(wheelLands >= 1 && wheelLands <= 1000)
-		var completionist = 0;
-		document.getElementById("inventoryPrinter").innerHTML=invXML.getElementsByTagName
-}
 
+console.log(invResXML.getElementsByTagName("Name")[0].nodeValue);
+
+//swamp
+function SwampA() {
+	if(wheelLands >= 1 && wheelLands <= 1000){
+		var completionist = 0;
+	}		
+}
+//document.getElementById("invetoryPrinter").innerHTML
 
 
 

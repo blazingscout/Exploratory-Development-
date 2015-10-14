@@ -568,7 +568,15 @@
 	<QuestItems>
 		
 	</QuestItems>
+	<DevItems>
+		<JohnCenaSmash>
+			<Name>John Cena's Super Smash</Name>
+			<Desc>Its john cena's patented SUPER SMASH</Desc>
+			<Damage>More than you can handle</Damage>
+			<Durability>THE SUPER SMASH NEVER DIES!</Durability>
+		</JohnCenaSmash>
 	
+	</DevItems>
 	
 	
 	
