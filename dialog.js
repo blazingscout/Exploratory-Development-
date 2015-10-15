@@ -16,11 +16,11 @@ inventory['slot1'] = "empty";
 console.log(inventory['slot1']);
 
 
-var invResXML
+
 
 //Inv items parcer
 var invXML = new XMLHttpRequest();
-invXML.open("GET", "EnemyNodes.xml", true);
+invXML.open("GET", "ItemNodes.xml", true);
 invXML.onload = function(e) {
 	if (invXML.readyState === 4) {
 		if (invXML.status === 200) {
@@ -36,6 +36,9 @@ invXML.onload = function(e) {
 		} else {
 			console.error(invXML.statusText);
 		}
+	
+	tester();
+	
 	}
 };
 invXML.onerror = function(e) {
@@ -141,7 +144,7 @@ xhr.onload = function() {
 				xhr.async = false;
 				xhr.loadXML(RoomNodes);
 			}
-
+			
 			startadv();
 
 		} else {
@@ -187,9 +190,10 @@ function startadv() {
 var wheelLands = Math.floor((Math.random() * 1000) + 1);
 console.log(wheelLands);
 		//ROOMS
-
-console.log(invResXML.getElementsByTagName("Name")[0].nodeValue);
-
+function tester(){
+	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
+	console.log(invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+}
 //swamp
 function SwampA() {
 	if(wheelLands >= 1 && wheelLands <= 1000){
