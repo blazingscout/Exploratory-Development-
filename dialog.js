@@ -11,8 +11,14 @@ hostileEncounter = true;
 var Equipped = new Array();
 
 var inventory = new Object();
-inventory['slot1'] = "empty";
-
+inventory['slot1'] = "A bag of crisps";
+inventory['slot2'] = "empty";
+inventory['slot3'] = "empty";
+inventory['slot4'] = "empty";
+inventory['slot5'] = "empty";
+inventory['slot6'] = "empty";
+inventory['slot7'] = "empty";
+inventory['slot8'] = "empty";
 console.log(inventory['slot1']);
 
 
@@ -65,7 +71,13 @@ $("#HandValue").hide();
 $("#LegValue").hide();
 $("#KnapValue").hide();
 $("#MiscValue").hide();
-
+function InventoryCheck(){
+	
+	$("#InventoryPrinter").show();
+	$("#InventoryPrinter").html(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
+	
+	$("#closer").show();
+}
 function ShowEquip(){
 	$("#HeadValue").show();
 	$("#ShoulderValue").show();
@@ -88,6 +100,9 @@ function UniCloser(){
 	$("#KnapValue").hide();
 	$("#MiscValue").hide();
 	$("#closer").hide();
+	$("#InventoryPrinter").hide();
+	$("#InventoryPrinter").html("");
+	
 }
 //END INVENTORY SYSTEM\\
 
@@ -192,7 +207,7 @@ console.log(wheelLands);
 		//ROOMS
 function tester(){
 	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
-	console.log(invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+	//console.log(invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 }
 //swamp
 function SwampA() {
