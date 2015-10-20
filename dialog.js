@@ -1,28 +1,32 @@
 console.log("Hello! I am your console, and I won't let you load XML :P");
 
-var health = 100;
+//XML Parser
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "RoomNodes.xml", true);
+xhr.onload = function() {
 
-//COMBAT intitial variables
+	if (xhr.readyState === 4) {
+		if (xhr.status === 200) {
+			if (window.DOMParser) {
+				parser = new DOMParser();
+				currentDesc = parser.parseFromString(xhr.responseText, "text/xml");
+			} else {
+				xhr = new ActiveXObject("Microsoft.XMLDOM");
+				xhr.async = false;
+				xhr.loadXML(RoomNodes);
+			}
+			
+			startadv();
 
-hostileEncounter = true;
-
-
-//Inventory BEGIN\\
-var Equipped = new Array();
-
-var inventory = new Object();
-inventory['slot1'] = "A bag of crisps";
-inventory['slot2'] = "empty";
-inventory['slot3'] = "empty";
-inventory['slot4'] = "empty";
-inventory['slot5'] = "empty";
-inventory['slot6'] = "empty";
-inventory['slot7'] = "empty";
-inventory['slot8'] = "empty";
-console.log(inventory['slot1']);
-
-
-
+		} else {
+			console.error(xhr.statusText);
+		}
+	}
+};
+xhr.onerror = function(e) {
+	console.error(xhr.statusText);
+};
+xhr.send();
 
 //Inv items parcer
 var invXML = new XMLHttpRequest();
@@ -52,6 +56,71 @@ invXML.onerror = function(e) {
 };
 invXML.send();
 
+//COMBAT XML LOADER
+var COMBAT = new XMLHttpRequest();
+COMBAT.open("GET", "EnemyNodes.xml", true);
+COMBAT.onload = function(e) {
+
+	if (COMBAT.readyState === 4) {
+		if (COMBAT.status === 200) {
+			if (window.DOMParser) {
+				parser = new DOMParser();
+				currentCombat = parser.parseFromString(COMBAT.responseText, "text/xml");
+			} else {
+				COMBAT = new ActiveXObject("Microsoft.XMLDOM");
+				COMBAT.async = false;
+				COMBAT.loadXML(RoomNodes);
+			}
+			CombatEngineStart();
+
+		} else {
+			console.error(COMBAT.statusText);
+		}
+	}
+};
+
+COMBAT.onerror = function(e) {
+	console.error(COMBAT.statusText);
+};
+
+COMBAT.send();
+
+function CombatEngineStart() {
+	if ( hostileEncounter = true){ 
+
+		console.log("goodness me combat has arose!");
+	}
+
+}
+
+
+var health = 100;
+
+//COMBAT intitial variables
+
+hostileEncounter = true;
+
+//END XML
+
+
+//Inventory BEGIN\\
+var Equipped = new Array();
+
+var inventory = new Object();
+inventory['slot1'] = "A bag of crisps";
+inventory['slot2'] = "empty";
+inventory['slot3'] = "empty";
+inventory['slot4'] = "empty";
+inventory['slot5'] = "empty";
+inventory['slot6'] = "empty";
+inventory['slot7'] = "empty";
+inventory['slot8'] = "empty";
+console.log(inventory['slot1']);
+
+
+
+
+
 
 // main inv system
 var head;
@@ -74,7 +143,7 @@ $("#MiscValue").hide();
 function InventoryCheck(){
 	
 	$("#InventoryPrinter").show();
-	$("#InventoryPrinter").html(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
+	$("#InventoryPrinter").innerhtml(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
 	
 	$("#closer").show();
 }
@@ -144,34 +213,6 @@ $("#btnD").show();
 
 
 
-//XML Parser
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "RoomNodes.xml", true);
-xhr.onload = function() {
-
-	if (xhr.readyState === 4) {
-		if (xhr.status === 200) {
-			if (window.DOMParser) {
-				parser = new DOMParser();
-				currentDesc = parser.parseFromString(xhr.responseText, "text/xml");
-			} else {
-				xhr = new ActiveXObject("Microsoft.XMLDOM");
-				xhr.async = false;
-				xhr.loadXML(RoomNodes);
-			}
-			
-			startadv();
-
-		} else {
-			console.error(xhr.statusText);
-		}
-	}
-};
-xhr.onerror = function(e) {
-	console.error(xhr.statusText);
-};
-xhr.send();
-
 
 
 //log
@@ -207,7 +248,7 @@ console.log(wheelLands);
 		//ROOMS
 function tester(){
 	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
-	//console.log(invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+	document.getElementById("invPrinter").innerhtml = invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 }
 //swamp
 function SwampA() {
@@ -265,41 +306,6 @@ var currentCombat;
 var enemytype = new Map();
 var chipitychip;
 
-var COMBAT = new XMLHttpRequest();
-COMBAT.open("GET", "EnemyNodes.xml", true);
-COMBAT.onload = function(e) {
-
-	if (COMBAT.readyState === 4) {
-		if (COMBAT.status === 200) {
-			if (window.DOMParser) {
-				parser = new DOMParser();
-				currentCombat = parser.parseFromString(COMBAT.responseText, "text/xml");
-			} else {
-				COMBAT = new ActiveXObject("Microsoft.XMLDOM");
-				COMBAT.async = false;
-				COMBAT.loadXML(RoomNodes);
-			}
-			CombatEngineStart();
-
-		} else {
-			console.error(COMBAT.statusText);
-		}
-	}
-};
-
-COMBAT.onerror = function(e) {
-	console.error(COMBAT.statusText);
-};
-
-COMBAT.send();
-
-function CombatEngineStart() {
-	if ( hostileEncounter = true){ 
-
-		console.log("goodness me combat has arose!");
-	}
-
-}
 
 //COMBAT MODULE END!\\
 
