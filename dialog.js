@@ -1,6 +1,12 @@
 console.log("Hello! I am your console, and I won't let you load XML :P");
-
+var currentDesc
+var currentCombat
+var InvResXML
 //XML Parser
+
+
+
+
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "RoomNodes.xml", true);
 xhr.onload = function() {
@@ -40,7 +46,7 @@ invXML.onload = function(e) {
 			} else {
 				invXML = new ActiveXObject("Microsoft.XMLDOM");
 				invXML.async = false;
-				invXML.loadXML(RoomNodes);
+				invXML.loadXML(ItemNodes);
 			}
 
 		} else {
@@ -69,7 +75,7 @@ COMBAT.onload = function(e) {
 			} else {
 				COMBAT = new ActiveXObject("Microsoft.XMLDOM");
 				COMBAT.async = false;
-				COMBAT.loadXML(RoomNodes);
+				COMBAT.loadXML(EnemyNodes);
 			}
 			CombatEngineStart();
 
@@ -143,7 +149,7 @@ $("#MiscValue").hide();
 function InventoryCheck(){
 	
 	$("#InventoryPrinter").show();
-	$("#InventoryPrinter").innerhtml(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
+	document.getElementById("InventoryPrinter").innerhtml(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
 	
 	$("#closer").show();
 }
@@ -247,8 +253,9 @@ var wheelLands = Math.floor((Math.random() * 1000) + 1);
 console.log(wheelLands);
 		//ROOMS
 function tester(){
+	$("#invetoryPrinter").show();
 	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
-	document.getElementById("invPrinter").innerhtml = invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+	document.getElementById("invetoryPrinter").innerhtml = currentDesc.getElementsByTagName("startA")[0].childNodes[0].nodeValue;
 }
 //swamp
 function SwampA() {
@@ -290,8 +297,13 @@ function continuerChain() {
 
 
 
+var testsub = 0;
 
+if(testsub == 0){
+	testsub = 2;
+}
 
+console.log(testsub);
 
 
 
