@@ -148,8 +148,8 @@ $("#KnapValue").hide();
 $("#MiscValue").hide();
 function InventoryCheck(){
 	
-	$("#InventoryPrinter").show();
-	document.getElementById("InventoryPrinter").innerhtml(inventory["slot1","slot2","slot3","slot4","slot5","slot6","slot7","slot8"]);
+	$("#invetoryPrinter").show();
+	document.getElementById("invetoryPrinter").innerHTML=inventory['slot1'];
 	
 	$("#closer").show();
 }
