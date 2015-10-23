@@ -149,7 +149,8 @@ $("#MiscValue").hide();
 function InventoryCheck(){
 	
 	$("#invetoryPrinter").show();
-	document.getElementById("invetoryPrinter").innerHTML=inventory['slot1'];
+	document.getElementById("inventoryPrinter").innerHTML=inventory['slot1'];
+	document.getElementById("inventoryPrinter").innerHTML=currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue;
 	
 	$("#closer").show();
 }
@@ -252,10 +253,18 @@ function startadv() {
 var wheelLands = Math.floor((Math.random() * 1000) + 1);
 console.log(wheelLands);
 		//ROOMS
+//beginArea
+function StartArea(){
+	document.getElementById("")
+	
+}		
+
+		
+		
 function tester(){
 	$("#invetoryPrinter").show();
 	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
-	document.getElementById("invetoryPrinter").innerhtml = currentDesc.getElementsByTagName("startA")[0].childNodes[0].nodeValue;
+	//document.getElementById("invetoryPrinter").innerhtml = currentDesc.getElementsByTagName("startA")[0].childNodes[0].nodeValue;
 }
 //swamp
 function SwampA() {
