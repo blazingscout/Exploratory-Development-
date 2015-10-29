@@ -151,7 +151,7 @@ function InventoryCheck(){
 	$("#invetoryPrinter").show();
 	document.getElementById("inventoryPrinter").innerHTML=inventory['slot1'];
 	document.getElementById("inventoryPrinter").innerHTML=currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue;
-	
+	document.getElementById("inventoryPrinter").innerHTML=invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 	$("#closer").show();
 }
 function ShowEquip(){
