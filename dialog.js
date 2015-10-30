@@ -54,7 +54,6 @@ invXML.onload = function(e) {
 		}
 	
 	tester();
-	
 	}
 };
 invXML.onerror = function(e) {
@@ -113,7 +112,7 @@ hostileEncounter = true;
 var Equipped = new Array();
 
 var inventory = new Object();
-inventory['slot1'] = "A bag of crisps";
+inventory['slot1'] = "empty";
 inventory['slot2'] = "empty";
 inventory['slot3'] = "empty";
 inventory['slot4'] = "empty";
@@ -148,7 +147,6 @@ $("#KnapValue").hide();
 $("#MiscValue").hide();
 function InventoryCheck(){
 	
-	$("#invetoryPrinter").show();
 	document.getElementById("inventoryPrinter").innerHTML=inventory['slot1'];
 	document.getElementById("inventoryPrinter").innerHTML=currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue;
 	document.getElementById("inventoryPrinter").innerHTML=invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
@@ -176,10 +174,26 @@ function UniCloser(){
 	$("#KnapValue").hide();
 	$("#MiscValue").hide();
 	$("#closer").hide();
-	$("#InventoryPrinter").hide();
-	$("#InventoryPrinter").html("");
+	
+	document.getElementById("inventoryPrinter").innerHTML= "";
 	
 }
+
+/*
+function InvLog(msg, clear) {
+	var InvLog = $('#Inventoryprinter');
+	if (clear) {
+		InvLog.innerHTML = "";
+	}
+
+	if (msg) {
+		if (InvLog.innerHTML !== "") {
+			invLog.innerHTML = "<br>" + InvLog.innerHTML + "<br>";
+		}
+		InvLog.innerHTML = msg + "\n" + InvLog.innerHTML;
+	}
+};
+*/
 //END INVENTORY SYSTEM\\
 
 
@@ -218,7 +232,10 @@ $("#btnB").show();
 $("#btnC").show();
 $("#btnD").show();
 
-
+function tester(){
+	inventory['slot1'] = invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+	
+}
 
 
 
@@ -259,13 +276,6 @@ function StartArea(){
 	
 }		
 
-		
-		
-function tester(){
-	$("#invetoryPrinter").show();
-	//console.log(currentDesc.getElementsByTagName("swampOneA")[2].childNodes[0].nodeValue);
-	//document.getElementById("invetoryPrinter").innerhtml = currentDesc.getElementsByTagName("startA")[0].childNodes[0].nodeValue;
-}
 //swamp
 function SwampA() {
 	if(wheelLands >= 1 && wheelLands <= 1000){

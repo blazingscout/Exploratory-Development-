@@ -65,9 +65,9 @@
 			</Shortswords>
 
 			<GreatSwords>
+			
+			
 			</GreatSwords>
-			
-			
 			<Katanas>
 				
 			</Katanas>
@@ -109,6 +109,8 @@
 					
 				</BusterBlade>
 				<GreaterSword>
+					
+				</GreaterSword>
 				<TheMountain>
 					
 				</TheMountain>
@@ -497,7 +499,9 @@
 	
 	</Wearable>
 	<Loot>
-		
+		<IvoryIdol>
+			<Name>Ivory Idol</Name>
+		</IvoryIdol>
 	</Loot>
 	<Currency>
 		<GoldCoin>
