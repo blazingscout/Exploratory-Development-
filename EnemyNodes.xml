@@ -11,7 +11,47 @@
 		</Kobold>
 		<Myr>
 			<Name>Myr</Name>
-			<Desc> This metal being is hip hight, and wields razor sharp claws! Myr's are very skiddish, so plan carefully! 
+			<Desc> This metal being is hip hight, and wields razor sharp claws! Myr's are very skiddish, so plan carefully! </Desc>
 		</Myr>
 	</SmallCitters>
+	<Critters>
+		<Bandits>
+			<Sand>
+				
+			</Sand>
+			<forrest>
+				
+				
+			</forrest>
+			<mountain>
+				
+			</mountain>
+			<pirate>
+				
+			</pirate>
+			<generic>
+				
+			</generic>
+			<skyraider>
+				
+			</skyraider>
+		
+		
+		
+		</Bandits>
+		
+		
+	</Critters>
+	<LargCritters>
+		<AwakenedEarth>
+			<Name>Awakened Earth</Name>
+			<Desc>This pile of earth has been animated for aeons, it has broken form the land scape to fend off intruders</Desc>			
+		</AwakenedEarth>
+		<>
+		
+		
+	</LargCritters>
+
+
+
 </EnemyNodes>
