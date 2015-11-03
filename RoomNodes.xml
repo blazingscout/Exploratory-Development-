@@ -9,15 +9,26 @@
 	<startarea>
 		<StartOpDesc> Welcome to Exploratory! You are an adventurer, ready to take on this world full of unexplainable phemnomenon, Your standing in a vast feild, what will you do? </StartOpDesc>
 		<StartOptions> 
-			<startA>  Search for a town </startA>
-			<startA>  Travel to the east </startA>
-			<startA>  Travel to the north </startA>
-			<startA>  Wander the plains </startA>
+			<startA> Search for a town </startA>
+			<startA> Begin xploring beyond the plains! </startA>
+			<startA> Wander the plains </startA>
+			<startA> Set up camp </startA>
+			<startA> Attempt to scavenge the areaS </startA>
+			
 		</StartOptions>
+		<StartSurroundings>
+			<NOsurroundings> You have no idea where you are!</NOsurroundings>
+			<VBsurroundings> You're standing in a feild, not much else to say</VBsurroundings>
+			<Bsurroundings> You are in a vast golden feild, grass flows with the wind</Bsurroundings>
+			<Nsurroundings> You are in a vast golden feild, grass flows with the wind. You deduce that there is a road nearby </Nsurroundings>
+			<Gsurroundings> You are in a vast golden feild, grass flows with the wind, You deduce that there would be some sort of bandit activity due to the road near by.</Gsurroundings>
+			<VGsurroundings> You are in a vast golden feild, grass flows with the wind, You spot a few traps in the grass and know to avoid them, the road that is nearby is currently not being used </VGsurroundings>
+		</StartSurroundings>
 		<StartFeedback> 
 			<startAA> You have no idea whre a town could be, so you do nothing! </startAA>
 			<startAA> You start off traveling east, and quickly exit the plains, and arrive in a swamp. You vigorously fight through the vegitation (+1 END) and come upon a pool with a strange object jetting out of the middle of it.  </startAA>
 			<startAA> You leave for the north and eventually come upon a mountain pass. you continue through the pass until you hear rustling in a near by bush. </startAA>
+			<startAA> You start to make camp</startAA>
 			<startAA> You meander around the plains for some time, looking at all the wild grasses and pretty flowers, suddenly you fall into a pit of pungee sticks, rendering you immoblie. In you last minutes of life you regret ever setting foot outside of your home.</startAA>
 		</StartFeedback>
 	</startarea>

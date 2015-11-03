@@ -39,7 +39,22 @@
 		
 		
 		</Bandits>
-		
+		<Military>
+			<Samurai>
+				
+			</Samurai>
+			<Ronin>
+				<Name>Ronin</Name>
+				<male>
+					<Desc>This Ronin looks like a normal government samurai, but he has stripped all of his affilitaions from his armour.</Desc>	
+				</male>
+				<female>
+					<Desc>This Ronin looks like a normal government samurai, but she has stripped all of her affilitaions from her armour.</Desc>
+				</female>					
+			</Ronin>
+			
+			
+		</Military>
 		
 	</Critters>
 	<LargCritters>

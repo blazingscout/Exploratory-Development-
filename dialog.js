@@ -21,9 +21,9 @@ xhr.onload = function() {
 				xhr.async = false;
 				xhr.loadXML(RoomNodes);
 			}
-			
+				
 			startadv();
-
+			StartArea();
 		} else {
 			console.error(xhr.statusText);
 		}
@@ -59,7 +59,7 @@ invXML.onload = function(e) {
 invXML.onerror = function(e) {
 	console.error(invXML.statusText);
 };
-invXML.send();
+
 
 //COMBAT XML LOADER
 var COMBAT = new XMLHttpRequest();
@@ -87,7 +87,7 @@ COMBAT.onload = function(e) {
 COMBAT.onerror = function(e) {
 	console.error(COMBAT.statusText);
 };
-
+invXML.send();
 COMBAT.send();
 
 function CombatEngineStart() {
@@ -99,7 +99,7 @@ function CombatEngineStart() {
 }
 
 
-var health = 100;
+
 
 //COMBAT intitial variables
 
@@ -147,9 +147,7 @@ $("#KnapValue").hide();
 $("#MiscValue").hide();
 function InventoryCheck(){
 	
-	document.getElementById("inventoryPrinter").innerHTML=inventory['slot1'];
-	document.getElementById("inventoryPrinter").innerHTML=currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue;
-	document.getElementById("inventoryPrinter").innerHTML=invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+	$("#inventoryPrinter").text(inventory['slot1']);
 	$("#closer").show();
 }
 function ShowEquip(){
@@ -175,7 +173,7 @@ function UniCloser(){
 	$("#MiscValue").hide();
 	$("#closer").hide();
 	
-	document.getElementById("inventoryPrinter").innerHTML= "";
+	$("#inventoryPrinter").text("");
 	
 }
 
@@ -197,8 +195,7 @@ function InvLog(msg, clear) {
 //END INVENTORY SYSTEM\\
 
 
-//Health and conditions (IE food drink, injury system!)
-var health = 100;
+
 
 //skills
 var Skills = new Array(5, 5, 5, 5, 5, 5);
@@ -236,8 +233,21 @@ function tester(){
 	inventory['slot1'] = invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 	
 }
+//Status (IE food drink, injury system!)
+var health = 100;
+var rightArm
+var leftArm
+var upperChest
+var lowerChest
+var rightLeg
+var leftLeg
+var hands
+var horns.
 
-
+//Surroundings Checks
+function SurroundCheck(){
+	if()
+}
 
 //log
 function log(msg, clear) {
@@ -260,6 +270,7 @@ function log(msg, clear) {
 function startadv() {
 	var start = /*prompt("Are you ready for an adventure through the planar universe?! (y/n)")*/"y";
 	if (start == "y") {
+		StartArea();
 		log("Have fun!");
 	} else {
 		startadv();
@@ -272,8 +283,7 @@ console.log(wheelLands);
 		//ROOMS
 //beginArea
 function StartArea(){
-	document.getElementById("")
-	
+	log(currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue);
 }		
 
 //swamp
