@@ -2,10 +2,13 @@ console.log("Hello! I am your console, and I won't let you load XML :P");
 var currentDesc
 var currentCombat
 var InvResXML
+var currentArea = "start"
+//AREA CALL VARIABLES\\
+/*
+startarea = "start"
+swamp1 = "swamp1"
+*/
 //XML Parser
-
-
-
 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "RoomNodes.xml", true);
@@ -234,19 +237,28 @@ function tester(){
 	
 }
 //Status (IE food drink, injury system!)
-var health = 100;
-var rightArm
-var leftArm
-var upperChest
-var lowerChest
-var rightLeg
-var leftLeg
-var hands
-var horns.
+var health =100;
+var blood =100;
+var upperRightArm =100;
+var lowerRightArm =100;
+var upperLeftArm =100;
+var lowerLeftArm =100;
+var upperChest =100;
+var lowerChest =100;
+var upperRightLeg=100;
+var lowerRightLeg =100;
+var upperLeftLeg =100;
+var lowerLeftLeg =100;
+var hands =100;
+var horns =100;
 
 //Surroundings Checks
 function SurroundCheck(){
-	if()
+	if(Skills[3] <= 5 && Skills[3] >=7){
+		if(currentArea == "start" ){
+			log(currentDesc.getElementsByTagName("Nsurroundings")[0].childNodes[0].nodeValue), "";
+		}
+	}
 }
 
 //log
@@ -283,7 +295,8 @@ console.log(wheelLands);
 		//ROOMS
 //beginArea
 function StartArea(){
-	log(currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue);
+	//log(currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue);
+	var empty = 666;
 }		
 
 //swamp
