@@ -179,6 +179,21 @@ function UniCloser(){
 	$("#inventoryPrinter").text("");
 	
 }
+//LOG(S)
+//log
+function log(msg, clear) {
+	var log = $('#log');
+	if (clear) {
+		log.innerHTML = "";
+	}
+
+	if (msg) {
+		if (log.innerHTML !== "") {
+			log.innerHTML = "<br>" + log.innerHTML + "<br>";
+		}
+		log.innerHTML = msg + "\n" + log.innerHTML;
+	}
+};
 
 /*
 function InvLog(msg, clear) {
@@ -236,6 +251,8 @@ function tester(){
 	inventory['slot1'] = invResXML.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 	
 }
+
+
 //Status (IE food drink, injury system!)
 var health =100;
 var blood =100;
@@ -254,27 +271,17 @@ var horns =100;
 
 //Surroundings Checks
 function SurroundCheck(){
-	if(Skills[3] <= 5 && Skills[3] >=7){
+	var checkScore = Skills[3];
+	console.log(Skills[3]);
+	if(checkScore >= 5 && checkScore <=7){
 		if(currentArea == "start" ){
-			log(currentDesc.getElementsByTagName("Nsurroundings")[0].childNodes[0].nodeValue), "";
-		}
-	}
+			var tmp = currentDesc.getElementsByTagName("Nsurroundings")[0].childNodes[0].nodeValue
+			log(tmp, "");
+		}else{}
+	}else{}
 }
 
-//log
-function log(msg, clear) {
-	var log = document.getElementById('log');
-	if (clear) {
-		log.innerHTML = "";
-	}
 
-	if (msg) {
-		if (log.innerHTML !== "") {
-			log.innerHTML = "<br>" + log.innerHTML + "<br>";
-		}
-		log.innerHTML = msg + "\n" + log.innerHTML;
-	}
-};
 //END SETUP\\
 
 
@@ -295,7 +302,7 @@ console.log(wheelLands);
 		//ROOMS
 //beginArea
 function StartArea(){
-	//log(currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue);
+	log(currentDesc.getElementsByTagName("StartOpDesc")[0].childNodes[0].nodeValue, "");
 	var empty = 666;
 }		
 
