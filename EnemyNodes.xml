@@ -46,7 +46,10 @@
 			<Ronin>
 				<Name>Ronin</Name>
 				<male>
-					<Desc>This Ronin looks like a normal government samurai, but he has stripped all of his affilitaions from his armour.</Desc>	
+					<Desc>This Ronin looks like a normal government samurai, but he has stripped all of his affilitaions from his armour for reasons known only to him.</Desc>	
+					<Armour>Half-Lamellar</Armour>
+					<Weapon>Naginata</Weapon>
+					<Death>Though this ronin was battle hardened after the death of his master, his life of the wave has come to an end by your hands.</Death>
 				</male>
 				<female>
 					<Desc>This Ronin looks like a normal government samurai, but she has stripped all of her affilitaions from her armour.</Desc>
@@ -66,7 +69,63 @@
 		
 		
 	</LargCritters>
-
+	<SpecialEnimies>
+		<Human>
+			<Mikami>
+				<Name>Mikami, Keeper of honor.</Name>
+				<Desc>Mikami is none the less agianst violence, and prefers to mend peoples wounds rather than inflicting them. But through your actions, she has taken up sacred arms to vanquish you!</Desc>
+				<Armour>Full-Lamellar</Armour>
+				<Weapon>Katana</Weapon>
+				<Speed>6</Speed>
+				<Ability1>Mending Hands</Ability1>
+				<Ability2>Bushido</Ability2>
+				<Death>Through combat superiortiy, you have slayed Mikami, she makes a last ditch effort to save herself with her healing magic, but stoppes breathing sortly after. </Death>
+			</Mikami>
+		</Human>
+		<Skal>
+			<Shekai>
+				<Name>Shekai, Caller of Protecters</Name>
+				<Desc>Shekai is a legendary ronin, he is here to call the world to arms against impending extinction, don't expect him to go easy on you.</Desc>
+				<Armour>Half-Lamellar</Armour>
+				<Weapon>Naginata</Weapon>
+				<Speed>7</Speed>
+				<Ablility1>Bushido</Ablility1>
+				<Death>You have bested Shekai, with the only proctector laying dead at your feet the plane is doomed against the lands that have been awoken.</Death>
+			</Shekai>
+		</Skal>
+		<Vampire>
+			<Vlad>
+				<Name>Vladimir Bourdreaux</Name>
+				<Desc>Vladimir is a ruthless ronin and cunning vampire lord, he empowers his blade with Hakana's Grimoire, making him a deadly adversary.</Desc>
+				<Armour>Studded</Armour>
+				<Weapon>Magic Katana</Weapon>
+				<Speed>10</Speed>
+				<Death>You have bested Vladimir, battered and bloody, he congradulates you on your victory, pulls himself (literally) together and limp's away.</Death>
+			</Vlad>
+		</Vampire>
+		<Goblin>
+			<KaiKai>
+				<Name>Kai-Kai, Ronin Seeker</Name>	
+				<Desc>Kai-Kai is a student of the arts of bushido, having killed multiple masters, he has not completed his training, but still seeks enlightenment</Desc>
+				<Armour>Cloth</Armour>
+				<Weapon>Tanto</Weapon>
+				<Speed>9</Speed>
+				<Death>Through supieror force you have defeated Kai-Kai, but he rises agian as a spirit, touched by the kami and ready to kill.</Death>		
+			</KaiKai>
+			<SpiritKaiKai>
+				<Name>Kami touched Kai-Kai</Name>
+				<Desc>The Kami has enlightened Kai-Kai in the secrets of bushido that he sought, now reformed and armed, he is ready to seek vengence.</Desc>
+				<Armour>None</Armour>
+				<Weapon>Etherial Tanto</Weapon>
+				<Speed>10</Speed>
+				<Ability1>Bushido</Ability1>
+				<Death>Even the enlightenment of the Kami was not enough keep Kai-Kai from his fate, you've bested one of the best ronin in all the lands.</Death>
+			</SpiritKaiKai>	
+		</Goblin>
+		
+		
+		
+	</SpecialEnimies>
 
 
 </EnemyNodes>

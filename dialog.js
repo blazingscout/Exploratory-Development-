@@ -112,7 +112,18 @@ hostileEncounter = true;
 
 
 //Inventory BEGIN\\
-var Equipped = new Array();
+var Equipped = new Object();
+Equipped['Head'] = "empty"
+Equipped['RightArm'] = "empty"
+Equipped['LeftArm'] = "empty"
+Equipped['UpperBody'] = "empty"
+Equipped['LowerBody'] = "empty"
+Equipped['RightLeg'] = "empty"
+Equipped['LeftLeg'] = "empty"
+Equipped['Back'] = "empty"
+Equipped['Misc']
+
+
 
 var inventory = new Object();
 inventory['slot1'] = "empty";
@@ -132,20 +143,26 @@ console.log(inventory['slot1']);
 
 // main inv system
 var head;
-var shoulders;
+var rightA;
+var leftA;
 var upperB;
 var lowerB;
-var legs;
-var hands;
+var rightL
+var leftL
+var rightH;
+var leftH
 var misc;
 var knap;
 
 $("#HeadValue").hide();
-$("#ShoulderValue").hide();
+$("#LeftArm").hide();
+$("#RightArm").hide();
 $("#UpperValue").hide();
 $("#LowerValue").hide();
-$("#HandValue").hide();
-$("#LegValue").hide();
+$("#RightHandValue").hide();
+$("#LeftHandValue").hide();
+$("#RightLegValue").hide();
+$("#LeftLegValue").hide();
 $("#KnapValue").hide();
 $("#MiscValue").hide();
 function InventoryCheck(){
@@ -155,11 +172,14 @@ function InventoryCheck(){
 }
 function ShowEquip(){
 	$("#HeadValue").show();
-	$("#ShoulderValue").show();
+	$("#LeftArm").show();
+	$("#RightArm").show();
 	$("#UpperValue").show();
 	$("#LowerValue").show();
-	$("#HandValue").show();
-	$("#LegValue").show();
+	$("#RightHandValue").show();
+	$("#LeftHandValue").show();
+	$("#RightLegValue").show();
+	$("#LeftLegValue").show();
 	$("#KnapValue").show();
 	$("#MiscValue").show();
 	$("#closer").show();
@@ -167,11 +187,14 @@ function ShowEquip(){
 
 function UniCloser(){
 	$("#HeadValue").hide();
-	$("#ShoulderValue").hide();
+	$("#LeftArm").hide();
+	$("#RightArm").hide();
 	$("#UpperValue").hide();
 	$("#LowerValue").hide();
-	$("#HandValue").hide();
-	$("#LegValue").hide();
+	$("#RightHandValue").hide();
+	$("#LeftHandValue").hide();
+	$("#RightLegValue").hide();
+	$("#LeftLegValue").hide();
 	$("#KnapValue").hide();
 	$("#MiscValue").hide();
 	$("#closer").hide();
@@ -366,6 +389,11 @@ console.log(testsub);
 var currentCombat;
 var enemytype = new Map();
 var chipitychip;
+
+//ARMOUR\\
+//Lamellar
+var HalfLamellar 
+
 
 
 //COMBAT MODULE END!\\
