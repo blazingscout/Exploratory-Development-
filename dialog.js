@@ -388,16 +388,20 @@ console.log(testsub);
 
 var currentCombat;
 var enemytype = new Map();
-var chipitychip;
 
 //ARMOUR\\
 //Lamellar
-var HalfLamellar 
+var HalfLamellar = 7
+var FullLamellar = 10
 
 
 
 //COMBAT MODULE END!\\
-
+function damage(){
+	if(hit == true){
+		if()
+	}
+}
 
 //document.getElementById("myImage").src = "landscape.jpg";
 
