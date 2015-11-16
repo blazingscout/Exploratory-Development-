@@ -399,7 +399,8 @@ var FullLamellar = 10
 //COMBAT MODULE END!\\
 function damage(){
 	if(hit == true){
-		if()
+		hitDmg = armourN - EnemyWpn + EnemyStr
+		
 	}
 }
 

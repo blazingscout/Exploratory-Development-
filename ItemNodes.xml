@@ -57,17 +57,20 @@
 		
 		
 		<Swords>
-			<Longswords>
+			<Tachi>
 				
-			</Longswords>
-			<Shortswords>
+			</Tachi>
+			<Longsword>
 				
-			</Shortswords>
+			</Longsword>
+			<Shortsword>
+				
+			</Shortsword>
 
-			<GreatSwords>
+			<GreatSword>
 			
 			
-			</GreatSwords>
+			</GreatSword>
 			<Katanas>
 				
 			</Katanas>
@@ -101,6 +104,9 @@
 			<Sabre>
 				
 			</Sabre>
+			<Wakazashi>
+				
+			</Wakazashi>
 			<UnreasonableSwords>
 				<ThePlank>
 					
@@ -271,10 +277,22 @@
 			<Flower>
 				
 			</Flower>
+			<Shiv>
+				
+			</Shiv>
 		</Improvised>
 		
 		
 		<Knives>
+			<Kunai>
+				
+			</Kunai>
+			<Sai>
+				
+			</Sai>
+			<Tanto>
+				
+			</Tanto>
 			<Baselard>
 				
 			</Baselard>
@@ -287,8 +305,12 @@
 			<Stilleto>
 				
 			</Stilleto>
-			
-		
+			<Jitte>
+				
+			</Jitte>
+			<Kukri>
+				
+			</Kukri>
 		</Knives>
 		
 		
@@ -317,7 +339,6 @@
 			<Shuriken>
 				
 			</Shuriken>
-		
 		</Ranged>
 		
 		
@@ -501,6 +522,8 @@
 	<Loot>
 		<IvoryIdol>
 			<Name>Ivory Idol</Name>
+			<Value>100</Value>
+			<id>1</id>
 		</IvoryIdol>
 	</Loot>
 	<Currency>

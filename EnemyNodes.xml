@@ -63,7 +63,7 @@
 	<LargCritters>
 		<AwakenedEarth>
 			<Name>Awakened Earth</Name>
-			<Desc>This pile of earth has been animated for aeons, it has broken form the land scape to fend off intruders</Desc>			
+			<Desc>This pile of earth has been dormant for aeons, it has broken from the landscape to destroy Kagima's inhabitants</Desc>			
 		</AwakenedEarth>
 		<>
 		
@@ -71,6 +71,16 @@
 	</LargCritters>
 	<SpecialEnimies>
 		<Human>
+			<Toshijiro>
+				<Name>Ramos, Captian of Intesa</Name>
+				<Desc>Ramos is the gaurd captian of Intesa, with the might of Mellaca and her armies, he has answered Shekai's call to arms against the awakening lands.</Desc>
+				<Armour>Full-Plate</Armour>
+				<Weapon></Weapon>
+				
+				
+				
+				
+			</Toshijiro>
 			<Mikami>
 				<Name>Mikami, Keeper of honor.</Name>
 				<Desc>Mikami is none the less agianst violence, and prefers to mend peoples wounds rather than inflicting them. But through your actions, she has taken up sacred arms to vanquish you!</Desc>
