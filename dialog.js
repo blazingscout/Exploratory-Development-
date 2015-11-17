@@ -385,10 +385,10 @@ console.log(testsub);
 
 
 //COMBAT MODULE START!\\
-
+var hit
 var currentCombat;
 var enemytype = new Map();
-
+var armourN = 
 //ARMOUR\\
 //Lamellar
 var HalfLamellar = 7
@@ -396,15 +396,18 @@ var FullLamellar = 10
 
 
 
-//COMBAT MODULE END!\\
+
 function damage(){
 	if(hit == true){
-		hitDmg = armourN - EnemyWpn + EnemyStr
-		
+		hitDmg = EnemyWpn + EnemyStr - armourN;
+		var hitLocation = Math.floor((Math.random() * 1000) + 1);
 	}
 }
 
 //document.getElementById("myImage").src = "landscape.jpg";
+
+
+//COMBAT MODULE END!\\
 
 
 
