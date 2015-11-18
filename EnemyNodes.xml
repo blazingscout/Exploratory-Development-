@@ -49,10 +49,15 @@
 					<Desc>This Ronin looks like a normal government samurai, but he has stripped all of his affilitaions from his armour for reasons known only to him.</Desc>	
 					<Armour>Half-Lamellar</Armour>
 					<Weapon>Naginata</Weapon>
+					<Speed>6</Speed>
 					<Death>Though this ronin was battle hardened after the death of his master, his life of the wave has come to an end by your hands.</Death>
 				</male>
 				<female>
+					<Armour>Half-Lamellar</Armour>
 					<Desc>This Ronin looks like a normal government samurai, but she has stripped all of her affilitaions from her armour.</Desc>
+					<Weapon>Naginata</Weapon>
+					<Speed>6</Speed>
+					<Death>Though this ronin was battle hardened after the death of her master, her life of the wave has come to an end by your hands.</Death>
 				</female>					
 			</Ronin>
 			
@@ -71,16 +76,27 @@
 	</LargCritters>
 	<SpecialEnimies>
 		<Human>
+			
 			<Toshijiro>
+				<Name>Toshijiro, The Silencer</Name>
+				<Desc>Toshijiro is a master of nature, he keeps balance in Viria's forest, his life as a hermit has made him a force to be reckoned with. You've upset the balance, prepare to die! </Desc>
+				<Armour>Bone-Lamellar</Armour>
+				<Weapon>Nodachi</Weapon>
+				<Speed>8</Speed>
+				<Ability1>Bushido</Ability1>
+				<Ability2>Nature's Force</Ability2>
+				<Death>Through your skill's as a warrior, you have disruppted the blance of nature in Viria's forest, and with her keeper lying dead at your feet, the woods are sure to see a tide of change never imaginable.</Death>
+			</Toshijiro>
+			<Ramos>
 				<Name>Ramos, Captian of Intesa</Name>
 				<Desc>Ramos is the gaurd captian of Intesa, with the might of Mellaca and her armies, he has answered Shekai's call to arms against the awakening lands.</Desc>
 				<Armour>Full-Plate</Armour>
-				<Weapon></Weapon>
+				<Weapon>Bastard Sword</Weapon>
+				<Speed>4</Speed>
+				<Ability1>Rally Call</Ability1>
+				<Death>Lowering your sword to Ramos, bloody and beaten, he utters one last curse to your name before succumbing to his wounds, with blade and ranks broken, he dies as a captian of none.</Death>
 				
-				
-				
-				
-			</Toshijiro>
+			</Ramos>
 			<Mikami>
 				<Name>Mikami, Keeper of honor.</Name>
 				<Desc>Mikami is none the less agianst violence, and prefers to mend peoples wounds rather than inflicting them. But through your actions, she has taken up sacred arms to vanquish you!</Desc>
@@ -93,6 +109,18 @@
 			</Mikami>
 		</Human>
 		<Skal>
+			<Koshita>
+				<Name>Koshita, Shekai's Messanger</Name>\
+				<Desc>Koshita lives and travels to find those that will answer Shekai's call to protect Kagima from the awakening of the ancient lands</Desc>
+				<Armour>Half-Lamellar</Armour>
+				<Weapon>Tanto</Weapon>
+				<Speed>10</Speed>
+				<Ability1>Bushido</Ability1>
+				<Ability2>Swift feet</Ability2>
+				<Death>Though he was just as fast as the wind, Koshita dies by your hands, Shekai's protectors will be mourning the loss of thier dear rallier.</Death>
+				
+			</Koshita>
+			
 			<Shekai>
 				<Name>Shekai, Caller of Protecters</Name>
 				<Desc>Shekai is a legendary ronin, he is here to call the world to arms against impending extinction, don't expect him to go easy on you.</Desc>

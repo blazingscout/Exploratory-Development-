@@ -400,7 +400,7 @@ var FullLamellar = 10
 function damage(){
 	if(hit == true){
 		hitDmg = EnemyWpn + EnemyStr - armourN;
-		var hitLocation = Math.floor((Math.random() * 1000) + 1);
+		var hitLocation = Math.floor((Math.random() * 10) + 1);
 	}
 }
 
