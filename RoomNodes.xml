@@ -17,7 +17,7 @@
 			
 		</StartOptions>
 		<StartSurroundings>
-			<NOsurroundings> You have no idea where you are!</NOsurroundings>
+			<NOsurroundings> You have no idea where you are, because you are blind!</NOsurroundings>
 			<VBsurroundings> You're standing in a feild, not much else to say</VBsurroundings>
 			<Bsurroundings> You are in a vast golden feild, grass flows with the wind</Bsurroundings>
 			<Nsurroundings> You are in a vast golden feild, grass flows with the wind. You deduce that there is a road nearby </Nsurroundings>
@@ -79,5 +79,4 @@
 	</mountainAreaOne>
 
 
-
-
+</gameData>

@@ -63,6 +63,13 @@ invXML.onerror = function(e) {
 	console.error(invXML.statusText);
 };
 
+//Ajax calls
+
+$.getScricpt("combat.js"), function(){
+	
+	alert("Script loaded but not executed")
+}
+//tbc
 
 //COMBAT XML LOADER
 var COMBAT = new XMLHttpRequest();
@@ -114,14 +121,14 @@ hostileEncounter = true;
 //Inventory BEGIN\\
 var Equipped = new Object();
 Equipped['Head'] = "empty"
-Equipped['RightArm'] = "empty"
-Equipped['LeftArm'] = "empty"
+Equipped['Arms'] = "empty"
+Equipped['Chest'] = "empty"
 Equipped['UpperBody'] = "empty"
 Equipped['LowerBody'] = "empty"
-Equipped['RightLeg'] = "empty"
-Equipped['LeftLeg'] = "empty"
+Equipped['Legs'] = "empty"
+Equipped['Feet'] = "empty"
 Equipped['Back'] = "empty"
-Equipped['Misc']
+Equipped['Misc'] = "empty"
 
 
 
@@ -143,28 +150,26 @@ console.log(inventory['slot1']);
 
 // main inv system
 var head;
-var rightA;
-var leftA;
-var upperB;
-var lowerB;
-var rightL
-var leftL
-var rightH;
-var leftH
+var arms;
+var chest;
+var upperbody;
+var lowerbody;
+var legs;
+var feet;
+var gloves;
 var misc;
 var knap;
 
 $("#HeadValue").hide();
-$("#LeftArm").hide();
-$("#RightArm").hide();
-$("#UpperValue").hide();
-$("#LowerValue").hide();
-$("#RightHandValue").hide();
-$("#LeftHandValue").hide();
-$("#RightLegValue").hide();
-$("#LeftLegValue").hide();
-$("#KnapValue").hide();
+$("#ArmsValue").hide();
+$("#ChestValue").hide();
+$("#UpperbodyValue").hide();
+$("#LowerbodyValue").hide();
+$("#LegsValue").hide();
+$("#FeetValue").hide();
+$("#GlovesValue").hide();
 $("#MiscValue").hide();
+$("#KnapValue").hide();
 function InventoryCheck(){
 	
 	$("#inventoryPrinter").text(inventory['slot1']);
@@ -172,29 +177,28 @@ function InventoryCheck(){
 }
 function ShowEquip(){
 	$("#HeadValue").show();
-	$("#LeftArm").show();
-	$("#RightArm").show();
-	$("#UpperValue").show();
-	$("#LowerValue").show();
-	$("#RightHandValue").show();
-	$("#LeftHandValue").show();
-	$("#RightLegValue").show();
-	$("#LeftLegValue").show();
-	$("#KnapValue").show();
+	$("#ArmsValue").show();
+	$("#ChestValue").show();
+	$("#UpperbodyValue").show();
+	$("#LowerbodyValue").show();
+	$("#LegsValue").show();
+	$("#FeetValue").show();
+	$("#GlovesValue").show();
 	$("#MiscValue").show();
+	$("#KnapValue").show();
 	$("#closer").show();
 }
 
 function UniCloser(){
 	$("#HeadValue").hide();
-	$("#LeftArm").hide();
-	$("#RightArm").hide();
-	$("#UpperValue").hide();
-	$("#LowerValue").hide();
-	$("#RightHandValue").hide();
-	$("#LeftHandValue").hide();
-	$("#RightLegValue").hide();
-	$("#LeftLegValue").hide();
+	$("#ArmsValue").hide();
+	$("#ChestValue").hide();
+	$("#UpperbodyValue").hide();
+	$("#LowerbodyValue").hide();
+	$("#LegsValue").hide();
+	$("#FeetValue").hide();
+	$("#GlovesValue").hide();
+	$("#MiscValue").hide();
 	$("#KnapValue").hide();
 	$("#MiscValue").hide();
 	$("#closer").hide();
@@ -385,14 +389,14 @@ console.log(testsub);
 
 
 //COMBAT MODULE START!\\
-var hit
+var hit;
 var currentCombat;
 var enemytype = new Map();
-var armourN = 
+var armourN = null;
 //ARMOUR\\
-//Lamellar
-var HalfLamellar = 7
-var FullLamellar = 10
+//Lamellar\\
+var HalfLamellar = 7;
+var FullLamellar = 10;
 
 
 
