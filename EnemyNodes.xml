@@ -70,26 +70,25 @@
 			<Name>Awakened Earth</Name>
 			<Desc>This pile of earth has been dormant for aeons, it has broken from the landscape to destroy Kagima's inhabitants</Desc>			
 		</AwakenedEarth>
-		<>
-		
+
 		
 	</LargCritters>
 	<SpecialEnimies>
 		<Human>
 			
 			<Toshijiro>
-				<Name>Toshijiro, The Silencer</Name>
-				<Desc>Toshijiro is a master of nature, he keeps balance in Viria's forest, his life as a hermit has made him a force to be reckoned with. You've upset the balance, prepare to die! </Desc>
+				<Name>Hoshijiro, The Silent Wind</Name>
+				<Desc>Hoshijiro is a master of nature, he keeps balance in Viria's forest, his life as a hermit has made him a force to be reckoned with. You've upset the balance, prepare to die! </Desc>
 				<Armour>Bone-Lamellar</Armour>
 				<Weapon>Nodachi</Weapon>
 				<Speed>8</Speed>
 				<Ability1>Bushido</Ability1>
 				<Ability2>Nature's Force</Ability2>
-				<Death>Through your skill's as a warrior, you have disruppted the blance of nature in Viria's forest, and with her keeper lying dead at your feet, the woods are sure to see a tide of change never imaginable.</Death>
+				<Death>Through your skill's as a warrior, you have disruppted the balance of nature in Viria's forest, and with her keeper lying dead at your feet, the woods are sure to see a tide of change never imaginable.</Death>
 			</Toshijiro>
 			<Ramos>
 				<Name>Ramos, Captian of Intesa</Name>
-				<Desc>Ramos is the gaurd captian of Intesa, with the might of Mellaca and her armies, he has answered Shekai's call to arms against the awakening lands.</Desc>
+				<Desc>Ramos is the gaurd captian of Intesa, with the might of Eclasia and her armies, he has answered Shekai's call to arms against the awakening lands, you stand in his way, prepare for a fight.</Desc>
 				<Armour>Full-Plate</Armour>
 				<Weapon>Bastard Sword</Weapon>
 				<Speed>4</Speed>
@@ -99,13 +98,13 @@
 			</Ramos>
 			<Mikami>
 				<Name>Mikami, Keeper of honor.</Name>
-				<Desc>Mikami is none the less agianst violence, and prefers to mend peoples wounds rather than inflicting them. But through your actions, she has taken up sacred arms to vanquish you!</Desc>
+				<Desc>Mikami is agianst violence, and prefers to mend peoples wounds rather than inflicting them. But through your actions, she has taken up sacred arms to vanquish you!</Desc>
 				<Armour>Full-Lamellar</Armour>
 				<Weapon>Katana</Weapon>
 				<Speed>6</Speed>
 				<Ability1>Mending Hands</Ability1>
 				<Ability2>Bushido</Ability2>
-				<Death>Through combat superiortiy, you have slayed Mikami, she makes a last ditch effort to save herself with her healing magic, but stoppes breathing sortly after. </Death>
+				<Death>Through combat superiortiy, you have bested Mikami, she makes a last ditch effort to save herself with her healing magic, but stops breathing before she can mend her wounds. </Death>
 			</Mikami>
 		</Human>
 		<Skal>
@@ -122,7 +121,7 @@
 			</Koshita>
 			
 			<Shekai>
-				<Name>Shekai, Caller of Protecters</Name>
+				<Name>Shekai, Caller of Armies</Name>
 				<Desc>Shekai is a legendary ronin, he is here to call the world to arms against impending extinction, don't expect him to go easy on you.</Desc>
 				<Armour>Half-Lamellar</Armour>
 				<Weapon>Naginata</Weapon>
@@ -138,13 +137,13 @@
 				<Armour>Studded</Armour>
 				<Weapon>Magic Katana</Weapon>
 				<Speed>10</Speed>
-				<Death>You have bested Vladimir, battered and bloody, he congradulates you on your victory, pulls himself (literally) together and limp's away.</Death>
+				<Death>You have bested Vladimir, battered and bloody, he congradulates you on your victory, pulls himself (literally) together and vanishes in a cloud of black magic.</Death>
 			</Vlad>
 		</Vampire>
 		<Goblin>
 			<KaiKai>
 				<Name>Kai-Kai, Ronin Seeker</Name>	
-				<Desc>Kai-Kai is a student of the arts of bushido, having killed multiple masters, he has not completed his training, but still seeks enlightenment</Desc>
+				<Desc>Kai-Kai is a student of the arts of bushido, having killed multiple masters, he has not completed his training, but still seeks enlightenment, you stand between him and his goals</Desc>
 				<Armour>Cloth</Armour>
 				<Weapon>Tanto</Weapon>
 				<Speed>9</Speed>

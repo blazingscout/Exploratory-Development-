@@ -372,7 +372,16 @@
 		
 		<Head>
 			<Plate>
-				<Llamar>Llamar Helmet</Llamar>
+				<Lamellar>
+					<Helmet>
+						<desc>A fully plated Lamellar Helmet</desc>
+						<ac>1</ac>
+					
+					</Helmet>
+				
+				
+				
+				</Lamellar>
 			
 			
 			

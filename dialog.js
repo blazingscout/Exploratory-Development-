@@ -10,6 +10,10 @@ swamp1 = "swamp1"
 */
 //XML Parser
 
+	
+	
+	
+
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "RoomNodes.xml", true);
 xhr.onload = function() {
@@ -63,15 +67,9 @@ invXML.onerror = function(e) {
 	console.error(invXML.statusText);
 };
 
-//Ajax calls
 
-$.getScricpt("combat.js"), function(){
-	
-	alert("Script loaded but not executed")
-}
-//tbc
 
-//COMBAT XML LOADER
+//COMBAT XML LOADER\\
 var COMBAT = new XMLHttpRequest();
 COMBAT.open("GET", "EnemyNodes.xml", true);
 COMBAT.onload = function(e) {
@@ -207,6 +205,9 @@ function UniCloser(){
 	
 }
 //LOG(S)
+
+$("#divTest").val("congrats!")
+
 //log
 function log(msg, clear) {
 	var log = $('#log');
