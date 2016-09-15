@@ -207,7 +207,7 @@ function UniCloser(){
 //LOG(S)
 
 $("#divTest").val("congrats!")
-
+console.log($('#divTest').val())
 //log
 function log(msg, clear) {
 	var log = $('#log');
@@ -295,7 +295,6 @@ var lowerRightLeg =100;
 var upperLeftLeg =100;
 var lowerLeftLeg =100;
 var hands =100;
-var horns =100;
 
 //Surroundings Checks
 function SurroundCheck(){
@@ -405,7 +404,8 @@ var FullLamellar = 10;
 function damage(){
 	if(hit == true){
 		hitDmg = EnemyWpn + EnemyStr - armourN;
-		var hitLocation = Math.floor((Math.random() * 10) + 1);
+		var hitLocation = Math.floor((Math.random() *11) + 1);
+		console.log()
 	}
 }
 
