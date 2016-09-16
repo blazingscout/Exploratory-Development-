@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<player>
+	<limbHealth>
+	 <health>100</health>
+	 <blood>100</blood>
+	 <upperRightArm>100</upperRightArm>
+	 <lowerRightArm>100</lowerRightArm>
+	 <upperLeftArm>100</upperLeftArm>
+	 <lowerLeftArm>100</lowerLeftArm>
+	 <upperChest>100</upperChest>
+	 <lowerChest>100</lowerChest>
+	 <upperRightLeg>100</upperRightLeg>
+	 <lowerRightLeg>100</lowerRightLeg>
+	 <upperLeftLeg>100</upperLeftLeg>
+	 <lowerLeftLeg>100</lowerLeftLeg>
+	 <leftHand>100</leftHand>
+	 <rightHand>100</rightHand>
+	</limbHealth>
+
+	<overall>Healthy</overall>
+</player>

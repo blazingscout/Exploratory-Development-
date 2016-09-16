@@ -1,19 +1,25 @@
 <?xml version="1.0"?>
+<!DOCTYPE xml>
 <gameData>
 	<note>I like pie
 		<footnote>I see you with that net</footnote>
 	</note>
 
-
+	<additionalOptions>
+		<options>Set up camp.</options>
+		<options>Search for a trader.</options>
+		<options>Scavenge the area.</options>
+		
+	</additionalOptions>
 
 	<startarea>
 		<StartOpDesc> Welcome to Exploratory! You are an adventurer, ready to take on this world full of unexplainable phemnomenon, Your standing in a vast feild, what will you do? </StartOpDesc>
 		<StartOptions> 
 			<startA> Search for a town </startA>
-			<startA> Begin xploring beyond the plains! </startA>
+			<startA> Begin exploring beyond the plains! </startA>
 			<startA> Wander the plains </startA>
 			<startA> Set up camp </startA>
-			<startA> Attempt to scavenge the areaS </startA>
+			<startA> Attempt to scavenge the areas. </startA>
 			
 		</StartOptions>
 		<StartSurroundings>
