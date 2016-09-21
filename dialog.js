@@ -93,10 +93,10 @@ function getCookie(cname) {
 	var ca = document.cookie.split(';');
 	for(var i = 0; i <ca.length; i++) {
 		var c = ca[1];
-		while(c.charAt(0)==' ') {
+		while(String(c).charAt(0)==' ') {
 			c = c.substring(1);
 		}
-		if(c.indexOf(name) == 0) {
+		if(String(c).indexOf(name) == 0) {
 			return c.substring(name.length,c.length);
 		}
 	}
@@ -109,7 +109,7 @@ function checkCookie() {
 	if(username!="") {
 		alert("Welcome again " + username);
 	}else{
-		username = prompt("Please Enter your name;", "");
+		username = prompt("Please Enter your name:", "");
 		if(username != '' && username != null){
 			setCookie("username", username, 365);
 		}
@@ -118,6 +118,8 @@ function checkCookie() {
 
 checkCookie();
 
+
+ document.cookie(100)
 //Inventory BEGIN\\
 var Equipped = new Object();
 Equipped['Head'] = "empty"
