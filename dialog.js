@@ -119,7 +119,12 @@ function checkCookie() {
 checkCookie();
 
 
- document.cookie(100)
+ document.cookie = "Health;100";
+ setCookie("Health", 100, "1")
+ console.log("cookies")
+ var health = getCookie('Health')
+ console.log(health)
+ 
 //Inventory BEGIN\\
 var Equipped = new Object();
 Equipped['Head'] = "empty"
