@@ -1,4 +1,7 @@
 console.log("Hello! I am your console, and I won't let you load XML :P");
+FromObject.elements["health"].value = 100;
+var health = oFromObject.elements["health"].value
+console.log(health);
 var currentDesc
 var currentCombat
 var InvResXML

@@ -15,7 +15,7 @@
 			Exploratory! Alpha 0.1.0 "Icecream" build
 		</div>
 		<br />
-		<span id="health">Health:</span>
+		<span id="health">Health:</span><input type=hidden name=heatlh value=""></input>
 		<br />
 		STR:<span id="str">  </span>
 		END:<span id="end">  </span>
@@ -74,7 +74,7 @@
 		<span id="inventoryPrinter"> </span>
 		<br />
 		<br />
-		<div value="Head" id="HeadValue">Head:</div>
+		<div value="Head" id="HeadValue"></div>
 		<div value="Arms" id="ArmsValue">Arms:</div>
 		<div value="Upperbody" id="UpperbodyValue">Upper Body:</div>
 		<div value="Chest" id="ChestValue">Chest:</div>
@@ -87,6 +87,7 @@
 		<span id="inventory"></span>
 		<input value="close"type="button"id="closer"onclick="UniCloser()">
 		<div id = "textDiv"></div>
+		
 		
 		<script src="dialog.js" type="text/javascript"></script>
 		<script src="combat.js" type="text/javascript"></script>
