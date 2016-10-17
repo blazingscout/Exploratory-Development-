@@ -1,13 +1,13 @@
 console.log("Hello! I am your console, and I won't let you load XML :P");
-var health = 100;
-$_session['health'] = name;
-onFromObject.elements["health"].value = 100;
-var health = onFromObject.elements["health"].value;
-console.log(health);
-var currentDesc
-var currentCombat
-var InvResXML
-var currentArea = "start"
+//var health = 100;
+//$_session['health'] = name;
+//onFromObject.elements["health"].value = 100;
+//var health = onFromObject.elements["health"].value;
+//console.log(health);
+var currentDesc = null;
+var currentCombat = null;
+var InvResXML = null;
+var currentArea = "start";
 //AREA CALL VARIABLES\\
 /*
 startarea = "start"
@@ -15,8 +15,6 @@ swamp1 = "swamp1"
 */
 //XML Parser
 
-	
-	
 	
 
 var xhr = new XMLHttpRequest();
@@ -81,54 +79,12 @@ invXML.onerror = function(e) {
 //F**king cookies
 
 
-document.cookie = "username=John Doe";
 
-var x = document.cookie
-
-function setCookie(cname, cvalue, exdays) {
-	var d = new Date();
-	d.setTime(d.getTime()+ (exdays*24*60*60*1000));
-	var expires = "expires="+ d.toUTCString();
-	document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-console.log("done");
-
-function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i = 0; i <ca.length; i++) {
-		var c = ca[1];
-		while(String(c).charAt(0)==' ') {
-			c = c.substring(1);
-		}
-		if(String(c).indexOf(name) == 0) {
-			return c.substring(name.length,c.length);
-		}
-	}
-	return "";
-	
-}
-
-function checkCookie() {
-	var username = getCookie("username");
-	if(username!="") {
-		alert("Welcome again " + username);
-	}else{
-		username = prompt("Please Enter your name:", "");
-		if(username != '' && username != null){
-			setCookie("username", username, 365);
-		}
-	}
-}
-
-checkCookie();
+document.cookie= "health=100";
+var health = document.cookie;
+console.log(health);
 
 
- document.cookie = "Health;100";
- setCookie("Health", 100, "1")
- console.log("cookies")
- var health = getCookie('Health')
- console.log(health)
  
 //Inventory BEGIN\\
 var Equipped = new Object();
@@ -142,8 +98,6 @@ Equipped['Feet'] = "empty"
 Equipped['Back'] = "empty"
 Equipped['Misc'] = "empty"
 
-
-
 var inventory = new Object();
 inventory['slot1'] = "empty";
 inventory['slot2'] = "empty";
@@ -154,11 +108,6 @@ inventory['slot6'] = "empty";
 inventory['slot7'] = "empty";
 inventory['slot8'] = "empty";
 console.log(inventory['slot1']);
-
-
-
-
-
 
 // main inv system
 var head;
