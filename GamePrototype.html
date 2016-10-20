@@ -33,8 +33,9 @@ function getCookie(cname) {
     return "";
 }
 
+setCookie("health", "100", 1);
 function checkCookie() {
-    var user=getCookie("username");
+    var user=getCookie("health");
     if (user != "") {
         alert("Welcome again " + user);
     } else {
@@ -45,10 +46,17 @@ function checkCookie() {
     }
 }
 
+
+
+function healthCheck() {
+
+	var health = getCookie("health");
+	alert('your health' + " " + health);
+}
 	</script>
 	
 	
-	<body onload="checkCookie()">
+	<body onload="healthCheck()">
 		<br>
 		<!--button onclick = "startup()">Initialize</button-->
 		<br>
