@@ -108,7 +108,13 @@ function healthCheck() {
 }
 
 healthCheck();
-
+function DamageIt() {
+	var health = getCookie("health");
+	var heal = parseInt(health);
+	alert('your health' + " " + heal - 1);
+	
+	
+}
  
 //Inventory BEGIN\\
 var Equipped = new Object();

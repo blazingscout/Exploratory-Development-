@@ -33,7 +33,7 @@ function getCookie(cname) {
     return "";
 }
 
-setCookie("health", "100", 1);
+setCookie("health", 100, 1);
 function checkCookie() {
     var user=getCookie("health");
     if (user != "") {
@@ -51,7 +51,8 @@ function checkCookie() {
 function healthCheck() {
 
 	var health = getCookie("health");
-	alert('your health' + " " + health);
+	var heal = parseInt(health)
+	alert('your health' + " " + heal - 1);
 }
 	</script>
 	
@@ -116,7 +117,7 @@ function healthCheck() {
 		</form>
 		<br>
 		<br>
-
+		<input value="DamageMe"type="button"id="damageBtn"onclick="DamageIt()"/>
 		<br>
 		<br>
 		<span id="EquipDongle"> </span>
