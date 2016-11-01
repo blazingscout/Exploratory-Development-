@@ -110,9 +110,11 @@ function healthCheck() {
 healthCheck();
 function DamageIt() {
 	var health = getCookie("health");
-	var heal = parseInt(health);
-	alert('your health' + " " + heal - 1);
-	
+	console.log(health);
+	var heal = parseInt(getCookie("health"));
+	var heck = heal - 1;
+	alert('your health' + " " + heck);
+	setCookie("health", heck, 1)
 	
 }
  
