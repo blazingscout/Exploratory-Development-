@@ -34,30 +34,13 @@ function getCookie(cname) {
 }
 
 setCookie("health", 100, 1);
-function checkCookie() {
-    var user=getCookie("health");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 30);
-       }
-    }
-}
 
+//dont forget the onload for the body if you want something started when the page starts
 
-
-function healthCheck() {
-
-	var health = getCookie("health");
-	var heal = parseInt(health)
-	alert('your health' + " " + heal - 1);
-}
 	</script>
 	
 	
-	<body onload="healthCheck()">
+	<body>
 		<br>
 		<!--button onclick = "startup()">Initialize</button-->
 		<br>

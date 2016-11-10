@@ -101,22 +101,7 @@ function getCookie(cname) {
 }
 
 
-function healthCheck() {
 
-	var health = getCookie("health");
-	alert('your health' + " " + health);
-}
-
-healthCheck();
-function DamageIt() {
-	var health = getCookie("health");
-	console.log(health);
-	var heal = parseInt(getCookie("health"));
-	var heck = heal - 1;
-	alert('your health' + " " + heck);
-	setCookie("health", heck, 1)
-	
-}
  
 //Inventory BEGIN\\
 var Equipped = new Object();
@@ -240,7 +225,7 @@ function InvLog(msg, clear) {
 
 //skills
 var Skills = new Array(5, 5, 5, 5, 5, 5);
-
+setCookie("skills", Skills, 1);
 var strength = Skills[0];
 var endurance = Skills[1];
 var charisma = Skills[2];
