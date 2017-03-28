@@ -126,7 +126,7 @@ inventory['slot7'] = "empty";
 inventory['slot8'] = "empty";
 console.log(inventory['slot1']);
 
-// main inv system
+// main system
 var head;
 var arms;
 var chest;
@@ -149,7 +149,6 @@ $("#GlovesValue").hide();
 $("#MiscValue").hide();
 $("#KnapValue").hide();
 function InventoryCheck(){
-	
 	$("#inventoryPrinter").text(inventory['slot1']);
 	$("#closer").show();
 }
@@ -180,7 +179,6 @@ function UniCloser(){
 	$("#KnapValue").hide();
 	$("#MiscValue").hide();
 	$("#closer").hide();
-	
 	$("#inventoryPrinter").text("");
 	
 }
@@ -224,21 +222,7 @@ function InvLog(msg, clear) {
 
 
 //skills
-var Skills = new Array(5, 5, 5, 5, 5, 5);
-setCookie("skills", Skills, 1);
-var strength = Skills[0];
-var endurance = Skills[1];
-var charisma = Skills[2];
-var intellegence = Skills[3];
-var wisdom = Skills[4];
-var dexterity = Skills[5];
 
-$("#str").text(strength);
-$("#end").text(endurance);
-$("#cha").text(charisma);
-$("#int").text(intellegence);
-$("#wis").text(wisdom);
-$("#dex").text(dexterity);
 
 
 

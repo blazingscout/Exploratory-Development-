@@ -22,6 +22,20 @@ function getCookie(cname) {
     return "";
 }
 
+/*
+var Skills = new Array(5, 5, 5, 5, 5, 5);
+setCookie("skills", Skills, 1);
+var strength = Skills[0];
+var endurance = Skills[1];
+var charisma = Skills[2];
+var intellegence = Skills[3];
+var wisdom = Skills[4];
+var dexterity = Skills[5];
+
+*/
+
+
+
 
 
 var Skills = getCookie("skills");
@@ -34,12 +48,22 @@ var wisdom = Skills[4];
 var dexterity = Skills[5];
 
 
+$("#str").text(strength);
+$("#end").text(endurance);
+$("#cha").text(charisma);
+$("#int").text(intellegence);
+$("#wis").text(wisdom);
+$("#dex").text(dexterity);
+
+
+$("#helath").text("100")
 function DamageIt() {
 	var health = getCookie("health");
 	console.log(health);
 	var heal = parseInt(getCookie("health"));
 	var heck = heal - 1;
-	alert('your health' + " " + heck);
+	$("#health").text(heck)
+	$("#health").show()
 	setCookie("health", heck, 1)
 	
 }
@@ -47,7 +71,7 @@ function DamageIt() {
 
 
 
-//COMBAT XML LOADER\\
+//COMBAT X remember to hit Control + F5 LOADER\\
 var COMBAT = new XMLHttpRequest();
 COMBAT.open("GET", "EnemyNodes.xml", true);
 COMBAT.onload = function(e) {
@@ -113,7 +137,7 @@ var sAmp = strength;
 var fAmp = dexterity;
 
 var type = null;
-//damage
+//damage package
 var random = Math.floor(Math.random() * ((10-1)+1) + 1);
 //Math.floor(Math.random() * 9 + 1);
 
